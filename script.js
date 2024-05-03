@@ -21,6 +21,14 @@ const collectEmployees = function() {
   }
 }
 
+const employeesArray= function(collectEmployees) {
+  const employeesArray= [];
+  employeesArray.push("firstName");
+  employeesArray.push("lastName");
+  employeesArray.push("salary");
+  printData(employeesArray);
+}
+
 
 
 
