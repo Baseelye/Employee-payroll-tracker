@@ -7,6 +7,17 @@ const collectEmployees = function() {
   var firstName = prompt("Enter your first name");
   var lastName = prompt("Enter your last name");
   var salary = prompt("Enter salary");
+  if(isNaN(salary)){
+    salary = 0
+  }
+
+  var employeeList = []
+  var employeeData = {
+    firstName,
+    lastName,
+    salary,
+  }
+  employeeList.push(employeeData);
 
   addAnotherEmployee = confirm("Do you want to add another employee?")
 
@@ -17,17 +28,18 @@ const collectEmployees = function() {
   if(isNaN(salary)){
     salary = 0
   }
+  var employeeData = {
+    firstName,
+    lastName,
+    salary,
+  }
+  employeeList.push(employeeData);
+
   addAnotherEmployee = confirm("Do you want to add another employee?")
   }
+  return employeeList;
 }
 
-const employeesArray= function(collectEmployees) {
-  const employeesArray= [];
-  employeesArray.push("firstName");
-  employeesArray.push("lastName");
-  employeesArray.push("salary");
-  printData(employeesArray);
-}
 
 
 
@@ -35,7 +47,17 @@ const employeesArray= function(collectEmployees) {
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+ console.log(employeesArray);
+
+ var sum = 0
+ 
+ for (i= 0; i<employeesArray.lenght; i++) {
+  console.log(employeesArray[i].salary);
+  sum +=employeesArray[i].salary
+ };
+ console.log(sum);
+ var averageSalary = sum / employeesArray.lenght
+ console.log("The average salary is = ", averageSalary);
 }
 
 // Select a random employee
