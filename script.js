@@ -6,12 +6,14 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const collectEmployees = function() {
   var firstName = prompt("Enter your first name");
   var lastName = prompt("Enter your last name");
-  var salary = prompt("Enter salary");
+  var salary = parseInt(prompt("Enter salary"));
+  
   if(isNaN(salary)){
     salary = 0
   }
 
   var employeeList = []
+  
   var employeeData = {
     firstName,
     lastName,
@@ -24,7 +26,7 @@ const collectEmployees = function() {
   while (addAnotherEmployee === true) {
     var firstName = prompt("Enter your first name");
   var lastName = prompt("Enter your last name");
-  var salary = prompt("Enter salary");
+  var salary = parseInt(prompt("Enter salary"));
   if(isNaN(salary)){
     salary = 0
   }
@@ -51,12 +53,14 @@ const displayAverageSalary = function(employeesArray) {
 
  var sum = 0
  
- for (i= 0; i<employeesArray.lenght; i++) {
+ for (i= 0; i<employeesArray.length; i++) {
   console.log(employeesArray[i].salary);
-  sum +=employeesArray[i].salary
+  sum +=employeesArray[i].salary;
  };
  console.log(sum);
- var averageSalary = sum / employeesArray.lenght
+
+ var averageSalary = sum / employeesArray.length
+
  console.log("The average salary is = ", averageSalary);
 }
 
