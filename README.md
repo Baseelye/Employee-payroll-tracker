@@ -2,7 +2,7 @@
 
 My Task
 
-I have to modify a starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+I have to modify a starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that I modify. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
 User Story
 
@@ -21,3 +21,8 @@ WHEN THEY choose to continue
 THEN THEY are prompted to add a new employee
 WHEN THEY choose to cancel
 THEN their employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
+
+The following images show the web application's appearance and it's functionnality.
+
+"C:\Users\bours\Downloads\Untitled design.mp4"
+
